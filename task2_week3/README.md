@@ -203,13 +203,10 @@ Week3/
     └── debug_log.md
 ```
 
----
+## References
 
-## 📚 References
+- OpenLane RTL-to-GDSII flow documentation
+- SkyWater SKY130 PDK documentation
+- praHarshapm vsdmixedsignalflow repository (used as learning reference)
 
-1. M. Shalan & T. Edwards, "OpenLane," WOSET, 2020.
-   [github.com/The-OpenROAD-Project/OpenLane](https://github.com/The-OpenROAD-Project/OpenLane)
-2. SkyWater & Google, "SKY130 PDK," 2020.
-   [github.com/google/skywater-pdk](https://github.com/google/skywater-pdk)
-3. P. M. Harsha, "vsdmixedsignalflow," GitHub, 2021.
-   [github.com/praharshapm/vsdmixedsignalflow](https://github.com/praharshapm/vsdmixedsignalflow)
+

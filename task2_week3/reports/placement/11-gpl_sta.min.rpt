@@ -1,0 +1,39 @@
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+======================= Typical Corner ===================================
+
+Startpoint: select (clock source 'select')
+Endpoint: out (output port clocked by select)
+Path Group: select
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock select (rise edge)
+                  0.02    0.01    0.01 ^ select (in)
+     1    0.00                           select (net)
+                  0.02    0.00    0.01 ^ _458_/S (sky130_fd_sc_hd__mux2_2)
+                  0.03    0.12    0.13 ^ _458_/X (sky130_fd_sc_hd__mux2_2)
+     1    0.00                           _250_ (net)
+                  0.03    0.00    0.13 ^ _459_/A (sky130_fd_sc_hd__buf_1)
+                  0.40    0.30    0.44 ^ _459_/X (sky130_fd_sc_hd__buf_1)
+     1    0.03                           out (net)
+                  0.40    0.00    0.44 ^ out (out)
+                                  0.44   data arrival time
+
+                  0.15    0.00    0.00   clock select (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -0.44   data arrival time
+-----------------------------------------------------------------------------
+                                  2.19   slack (MET)
+
+
+

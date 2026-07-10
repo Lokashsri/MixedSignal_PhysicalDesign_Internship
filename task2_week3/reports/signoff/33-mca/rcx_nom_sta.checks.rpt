@@ -1,0 +1,263 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Fastest Corner ===================================
+
+Startpoint: select (clock source 'select')
+Endpoint: out (output port clocked by select)
+Path Group: select
+Path Type: max
+Corner: Fastest
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          5.00    5.00   clock select (fall edge)
+                          0.00    5.00   clock source latency
+                  0.01    0.00    5.00 v select (in)
+     1    0.01                           select (net)
+                  0.01    0.00    5.00 v _458_/S (sky130_fd_sc_hd__mux2_2)
+                  0.03    0.14    5.14 ^ _458_/X (sky130_fd_sc_hd__mux2_2)
+     1    0.00                           _250_ (net)
+                  0.03    0.00    5.14 ^ _459_/A (sky130_fd_sc_hd__buf_1)
+                  0.07    0.08    5.22 ^ _459_/X (sky130_fd_sc_hd__buf_1)
+     1    0.01                           net10 (net)
+                  0.07    0.00    5.22 ^ output10/A (sky130_fd_sc_hd__buf_1)
+                  0.30    0.25    5.48 ^ output10/X (sky130_fd_sc_hd__buf_1)
+     1    0.03                           out (net)
+                  0.30    0.00    5.48 ^ out (out)
+                                  5.48   data arrival time
+
+                         10.00   10.00   clock select (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -5.48   data arrival time
+-----------------------------------------------------------------------------
+                                  2.27   slack (MET)
+
+
+
+======================= Slowest Corner ===================================
+
+Startpoint: select (clock source 'select')
+Endpoint: out (output port clocked by select)
+Path Group: select
+Path Type: max
+Corner: Slowest
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          5.00    5.00   clock select (fall edge)
+                          0.00    5.00   clock source latency
+                  0.03    0.02    5.02 v select (in)
+     1    0.00                           select (net)
+                  0.03    0.00    5.02 v _458_/S (sky130_fd_sc_hd__mux2_2)
+                  0.07    0.42    5.44 ^ _458_/X (sky130_fd_sc_hd__mux2_2)
+     1    0.00                           _250_ (net)
+                  0.07    0.00    5.44 ^ _459_/A (sky130_fd_sc_hd__buf_1)
+                  0.15    0.22    5.66 ^ _459_/X (sky130_fd_sc_hd__buf_1)
+     1    0.01                           net10 (net)
+                  0.15    0.00    5.66 ^ output10/A (sky130_fd_sc_hd__buf_1)
+                  0.64    0.63    6.29 ^ output10/X (sky130_fd_sc_hd__buf_1)
+     1    0.03                           out (net)
+                  0.64    0.00    6.29 ^ out (out)
+                                  6.29   data arrival time
+
+                         10.00   10.00   clock select (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -6.29   data arrival time
+-----------------------------------------------------------------------------
+                                  1.46   slack (MET)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: select (clock source 'select')
+Endpoint: out (output port clocked by select)
+Path Group: select
+Path Type: max
+Corner: Typical
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          5.00    5.00   clock select (fall edge)
+                          0.00    5.00   clock source latency
+                  0.01    0.01    5.01 v select (in)
+     1    0.00                           select (net)
+                  0.01    0.00    5.01 v _458_/S (sky130_fd_sc_hd__mux2_2)
+                  0.04    0.21    5.22 ^ _458_/X (sky130_fd_sc_hd__mux2_2)
+     1    0.00                           _250_ (net)
+                  0.04    0.00    5.22 ^ _459_/A (sky130_fd_sc_hd__buf_1)
+                  0.10    0.12    5.34 ^ _459_/X (sky130_fd_sc_hd__buf_1)
+     1    0.01                           net10 (net)
+                  0.10    0.00    5.34 ^ output10/A (sky130_fd_sc_hd__buf_1)
+                  0.40    0.36    5.70 ^ output10/X (sky130_fd_sc_hd__buf_1)
+     1    0.03                           out (net)
+                  0.40    0.00    5.70 ^ out (out)
+                                  5.70   data arrival time
+
+                         10.00   10.00   clock select (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -5.70   data arrival time
+-----------------------------------------------------------------------------
+                                  2.05   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Fastest Corner ===================================
+
+No paths found.
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Fastest Corner ===================================
+
+
+======================= Slowest Corner ===================================
+
+
+======================= Typical Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 46 unclocked register/latch pins.
+  _509_/CLK
+  _510_/CLK
+  _511_/CLK
+  _512_/CLK
+  _513_/CLK
+  _514_/CLK
+  _515_/CLK
+  _516_/CLK
+  _517_/CLK
+  _518_/CLK
+  _519_/CLK
+  _520_/CLK
+  _521_/CLK
+  _522_/CLK
+  _523_/CLK
+  _524_/CLK
+  _525_/CLK
+  _526_/CLK
+  _527_/CLK
+  _528_/CLK
+  _529_/CLK
+  _530_/CLK
+  _531_/CLK
+  _532_/CLK
+  _533_/CLK
+  _534_/CLK
+  _535_/CLK
+  _536_/CLK
+  _537_/CLK
+  _538_/CLK
+  _539_/CLK
+  _540_/CLK
+  _541_/CLK
+  _542_/CLK
+  _543_/CLK
+  _544_/CLK
+  _545_/CLK
+  _546_/CLK
+  _547_/CLK
+  _548_/CLK
+  _549_/CLK
+  _550_/CLK
+  _551_/CLK
+  _552_/CLK
+  _553_/CLK
+  _554_/CLK
+Warning: There are 46 unconstrained endpoints.
+  _509_/D
+  _510_/D
+  _511_/D
+  _512_/D
+  _513_/D
+  _514_/D
+  _515_/D
+  _516_/D
+  _517_/D
+  _518_/D
+  _519_/D
+  _520_/D
+  _521_/D
+  _522_/D
+  _523_/D
+  _524_/D
+  _525_/D
+  _526_/D
+  _527_/D
+  _528_/D
+  _529_/D
+  _530_/D
+  _531_/D
+  _532_/D
+  _533_/D
+  _534_/D
+  _535_/D
+  _536_/D
+  _537_/D
+  _538_/D
+  _539_/D
+  _540_/D
+  _541_/D
+  _542_/D
+  _543_/D
+  _544_/D
+  _545_/D
+  _546_/D
+  _547_/D
+  _548_/D
+  _549_/D
+  _550_/D
+  _551_/D
+  _552_/D
+  _553_/D
+  _554_/D

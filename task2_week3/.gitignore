@@ -1,0 +1,6 @@
+*.vcd
+*.o
+*.out
+amux_sim
+*.log
+

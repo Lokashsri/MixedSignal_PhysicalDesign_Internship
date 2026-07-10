@@ -1,0 +1,5 @@
+
+63. Executing CHECK pass (checking for obvious problems).
+Checking module design_mux...
+Warning: Wire design_mux.\out is used but has no driver.
+Found and reported 1 problems.

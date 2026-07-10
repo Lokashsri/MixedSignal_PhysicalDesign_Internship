@@ -1,0 +1,19 @@
+Design Name: design_mux
+Run Directory: /openlane/designs/design_mux/runs/RUN_2026.07.09_13.32.51
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/design_mux/runs/RUN_2026.07.09_13.32.51/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/design_mux/runs/RUN_2026.07.09_13.32.51/logs/signoff/42-design_mux.lef.lvs.log
+Number of nets: 329                        |Number of nets: 329                        
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/design_mux/runs/RUN_2026.07.09_13.32.51/logs/signoff/44-arc.log
+Pin violations: 0
+Net violations: 0

@@ -1,0 +1,274 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO design_mux
+  CLASS BLOCK ;
+  FOREIGN design_mux ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 133.035 BY 143.755 ;
+  PIN CSB
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 102.040 4.000 102.640 ;
+    END
+  END CSB
+  PIN RST
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 129.035 13.640 133.035 14.240 ;
+    END
+  END RST
+  PIN SCK
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END SCK
+  PIN SDI
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.213000 ;
+    PORT
+      LAYER met2 ;
+        RECT 109.570 139.755 109.850 143.755 ;
+    END
+  END SDI
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 12.020 10.640 13.620 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 27.020 10.640 28.620 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 42.020 10.640 43.620 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 57.020 10.640 58.620 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 72.020 10.640 73.620 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 87.020 10.640 88.620 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 102.020 10.640 103.620 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 117.020 10.640 118.620 130.800 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 17.380 127.660 18.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 32.380 127.660 33.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 47.380 127.660 48.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 62.380 127.660 63.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 77.380 127.660 78.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 92.380 127.660 93.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 107.380 127.660 108.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 122.380 127.660 123.980 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 8.720 10.640 10.320 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 23.720 10.640 25.320 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 38.720 10.640 40.320 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 53.720 10.640 55.320 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 68.720 10.640 70.320 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 83.720 10.640 85.320 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 98.720 10.640 100.320 130.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 113.720 10.640 115.320 130.800 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 14.080 127.660 15.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 29.080 127.660 30.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 44.080 127.660 45.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 59.080 127.660 60.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 74.080 127.660 75.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 89.080 127.660 90.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 104.080 127.660 105.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 119.080 127.660 120.680 ;
+    END
+  END VPWR
+  PIN mask_rev_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 96.690 0.000 96.970 4.000 ;
+    END
+  END mask_rev_in[0]
+  PIN mask_rev_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 51.040 4.000 51.640 ;
+    END
+  END mask_rev_in[1]
+  PIN mask_rev_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 129.035 119.040 133.035 119.640 ;
+    END
+  END mask_rev_in[2]
+  PIN mask_rev_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 48.390 0.000 48.670 4.000 ;
+    END
+  END mask_rev_in[3]
+  PIN out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.340600 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.750 139.755 10.030 143.755 ;
+    END
+  END out
+  PIN select
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.318000 ;
+    PORT
+      LAYER met2 ;
+        RECT 58.050 139.755 58.330 143.755 ;
+    END
+  END select
+  PIN trap
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 129.035 64.640 133.035 65.240 ;
+    END
+  END trap
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 127.420 130.645 ;
+      LAYER met1 ;
+        RECT 0.070 10.640 127.810 130.800 ;
+      LAYER met2 ;
+        RECT 0.100 139.475 9.470 140.490 ;
+        RECT 10.310 139.475 57.770 140.490 ;
+        RECT 58.610 139.475 109.290 140.490 ;
+        RECT 110.130 139.475 127.790 140.490 ;
+        RECT 0.100 4.280 127.790 139.475 ;
+        RECT 0.650 4.000 48.110 4.280 ;
+        RECT 48.950 4.000 96.410 4.280 ;
+        RECT 97.250 4.000 127.790 4.280 ;
+      LAYER met3 ;
+        RECT 3.990 120.040 129.035 130.725 ;
+        RECT 3.990 118.640 128.635 120.040 ;
+        RECT 3.990 103.040 129.035 118.640 ;
+        RECT 4.400 101.640 129.035 103.040 ;
+        RECT 3.990 65.640 129.035 101.640 ;
+        RECT 3.990 64.240 128.635 65.640 ;
+        RECT 3.990 52.040 129.035 64.240 ;
+        RECT 4.400 50.640 129.035 52.040 ;
+        RECT 3.990 14.640 129.035 50.640 ;
+        RECT 3.990 13.240 128.635 14.640 ;
+        RECT 3.990 10.715 129.035 13.240 ;
+  END
+END design_mux
+END LIBRARY
+
