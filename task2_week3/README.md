@@ -202,6 +202,23 @@ Week3/
 └── Errors_and_Fixes/
     └── debug_log.md
 ```
+## AMUX2_3V Functional Simulation
+
+The analog multiplexer RTL functionality was verified using Icarus Verilog simulation.
+
+### Simulation Files
+
+- AMUX2_3V.v : AMUX design module
+- AMUX2_3V_tb.v : Testbench
+- amux.vcd : Generated waveform file
+- output.pdf : Simulation waveform analysis
+
+### Simulation Flow
+
+```bash
+iverilog AMUX2_3V.v AMUX2_3V_tb.v -o amux_sim
+vvp amux_sim
+gtkwave amux.vcd
 
 ## References
 
