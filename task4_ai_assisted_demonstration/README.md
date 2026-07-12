@@ -23,6 +23,7 @@ simulation flow and verify outputs.
 
 https://github.com/praharshapm/vsdmixedsignalflow
 
+
 ## Generated Files
 
 - AMUX2_3V.v
@@ -33,5 +34,30 @@ https://github.com/praharshapm/vsdmixedsignalflow
 ## Demonstration Video
 
 Video Link:
-(Add YouTube/Drive link)
+Google Drive link here
+## Demonstration Overview
+
+This video demonstrates:
+
+- Project introduction and design objective
+- Reference repository study
+- AI-assisted workflow
+- AI prompts used
+- Generated Verilog circuit and testbench files
+- Simulation using Icarus Verilog
+- Waveform verification using GTKWave
+- OpenLane RTL-to-GDSII flow
+- Errors encountered and fixes
+- Final design outputs
+
+
+
+
+
+
+
+
+
+
+
 
